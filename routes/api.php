@@ -19,4 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/', [PageController::class, 'index']);
-Route::get('/category', [PageController::class, 'getCategory']);
+Route::get('/categories', [PageController::class, 'getCategory']);
+Route::get('/types', [PageController::class, 'getType']);

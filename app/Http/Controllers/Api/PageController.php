@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Models\Post;
+use App\Models\Type;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -17,4 +18,11 @@ class PageController extends Controller
         $categories = Category::all();
        return response()->json($categories);
     }
+
+    public function getType(){
+        $types = Type::all();
+
+        return response()->json($types);
+    }
+
 }
