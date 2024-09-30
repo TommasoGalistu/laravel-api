@@ -1,0 +1,42 @@
+@import "~bootstrap/scss/bootstrap";
+body,
+html {
+    height: 100%;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: lightblue;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    width: 150px;
+    background-color: lightgray;
+}
+
+.main {
+    flex: 1;
+    background-color: white;
+    overflow: auto;
+}
+.category {
+    border: none;
+    margin: 1rem;
+}
+ul {
+    li {
+        margin: 0.2rem;
+    }
+    // list-style-type: none;
+}
