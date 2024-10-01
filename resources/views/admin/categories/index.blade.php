@@ -30,7 +30,7 @@
             <input class="category" type="text" name="name" value="{{ $category->name }}">
                 <button class="btn btn-warning">Modifica</button>
             </form>
-            <form action="{{ route('admin.categories.destroy', $category) }}" method="POST">
+            <form class="d-flex justify-content-center align-items-center" action="{{ route('admin.categories.destroy', $category) }}" method="POST">
                 @csrf
                 @method('DELETE')
                 <button class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>

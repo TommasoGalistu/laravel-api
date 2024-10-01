@@ -12,6 +12,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('admin.home') }}">{{ __('Home') }}</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('guest') }}">{{ __('Guest') }}</a>
+                </li>
             </ul>
 
             <!-- Right Side Of Navbar -->

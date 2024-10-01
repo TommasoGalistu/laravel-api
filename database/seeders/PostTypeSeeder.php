@@ -14,7 +14,8 @@ class PostTypeSeeder extends Seeder
      */
     public function run(): void
     {
-        for($i = 0; $i < 100; $i++){
+
+        for($i = 0; $i < 50; $i++){
 
             $post = Post::inRandomOrder()->first();
 

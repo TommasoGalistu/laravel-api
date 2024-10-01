@@ -18,7 +18,7 @@ use App\Http\Controllers\Admin\CategoryController;
 |
 */
 // rotte guest
-Route::get('/', [PageController::class, 'index']);
+Route::get('/', [PageController::class, 'index'])->name('guest');
 
 // rotte admin
 Route::middleware(['auth', 'verified'])
