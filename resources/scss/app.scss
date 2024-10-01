@@ -21,8 +21,23 @@ header {
 }
 
 .sidebar {
-    width: 150px;
+    // width: 150px;
     background-color: lightgray;
+
+    a {
+        margin: 0.2rem 1rem;
+        padding: 0.3rem 0.3rem;
+        background-color: grey;
+        text-decoration: none;
+        color: white;
+        &:hover {
+            background-color: black;
+        }
+    }
+    a.active {
+        background-color: rgb(47, 47, 47);
+        color: yellow;
+    }
 }
 
 .main {

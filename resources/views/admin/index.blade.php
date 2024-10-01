@@ -3,26 +3,15 @@
 @section('content')
 <div class="container">
     <h2 class="fs-4 text-secondary my-4">
-        <p>Home Admin</p>
+
+        <p>Ciao {{ Auth::user()->name }}</p>
     </h2>
-    <div class="row justify-content-center">
+    <div class="row">
         <div class="col">
-            <div class="card">
-                <div class="card-header">
-                    <p>Admin Dashboard</p>
-                </div>
+            <p>Sono presenti <a href="{{ route('admin.posts.index') }}" class="badge bg-success">{{ $last_element->id }}</a> post </p>
 
-                <div class="card-body">
-                    @if (session('status'))
-                    <div class="alert alert-success" role="alert">
-                        {{ session('status') }}
-                    </div>
-                    @endif
-
-                    <p>Finalmente sei dentro!!!</p>
-                </div>
-            </div>
         </div>
     </div>
+
 </div>
 @endsection

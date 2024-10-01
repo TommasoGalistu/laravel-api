@@ -11,7 +11,7 @@ use Illuminate\Http\Request;
 class PageController extends Controller
 {
     public function index(){
-       $posts = Post::orderBy('id', 'desc')->with('category', 'types')->get();
+       $posts = Post::orderBy('id', 'desc')->with('category', 'types')->paginate(10);
        return response()->json($posts);
     }
     public function getCategory(){

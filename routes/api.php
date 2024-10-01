@@ -18,6 +18,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/', [PageController::class, 'index']);
+Route::get('/posts', [PageController::class, 'index']);
 Route::get('/categories', [PageController::class, 'getCategory']);
 Route::get('/types', [PageController::class, 'getType']);
