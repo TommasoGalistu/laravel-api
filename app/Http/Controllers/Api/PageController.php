@@ -25,4 +25,10 @@ class PageController extends Controller
         return response()->json($types);
     }
 
+    public function getPostSlug($slug){
+        $post = Post::where('slug', $slug)->get();
+
+        return response()->json($post);
+    }
+
 }

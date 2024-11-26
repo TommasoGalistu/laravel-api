@@ -98,8 +98,10 @@ class PostController extends Controller
 
         if(array_key_exists('path_img', $data)){
             $path_img = Storage::put('uploads', $data['path_img']);
+
             $original_name_img = $request->file('path_img')->getClientOriginalName();
             $data['path_img'] = $path_img;
+
             $data['original_name_img'] = $original_name_img;
           }
         $post->update($data);
